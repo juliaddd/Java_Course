@@ -24,6 +24,6 @@ public class Kierownik extends Pracownik{
             podwladniInfo.deleteCharAt(podwladniInfo.length() - 1);
         }
 
-        return super.toString()+"\nInformacja o podwładnych: "+ podwladniInfo.toString() + "\nDodatkowa wypłata za podwładnych: "+ Integer.toString(dodatekZaPodwladnego);
+        return super.toString()+"\nInformacja o podwładnych: "+ podwladniInfo + "\nDodatkowa wypłata za podwładnych: "+ dodatekZaPodwladnego;
     }
 }

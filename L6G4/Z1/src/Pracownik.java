@@ -26,7 +26,7 @@ public class Pracownik  extends  Osoba{
 
     @Override
     public String toString() {
-        return super.toString()+ " "+ PESEL+" "+ Integer.toString(pensja)+" "+ Integer.toString(liczbaNadgodzin)+" "+ Integer.toString(kwotaZaNadgodzine)+" Roczna wypłata: "+ Integer.toString(this.obliczRocznaWyplate()) ;
+        return super.toString()+ " "+ PESEL+" "+ pensja+" "+ liczbaNadgodzin+" "+ kwotaZaNadgodzine+" Roczna wypłata: "+ this.obliczRocznaWyplate() ;
     }
 
 }
