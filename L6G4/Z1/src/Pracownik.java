@@ -29,10 +29,10 @@ public class Pracownik  extends  Osoba{
         return super.toString()+ " "+ PESEL+" "+ pensja+" "+ liczbaNadgodzin+" "+ kwotaZaNadgodzine+" Roczna wypłata: "+ this.obliczRocznaWyplate() ;
     }
 
-}
-
-class PracownikException extends Exception{
-    public PracownikException(String message){
-        super(message);
+    public static class PracownikException extends Exception{
+        public PracownikException(String message){
+            super(message);
+        }
     }
 }
+

@@ -14,8 +14,8 @@ public class Main {
             osoby[0] = p3;
             osoby[1] = p1;
             osoby[2] = p2;
-            osoby[3] = kierownik;
-            osoby[4] = p4;
+            osoby[3] = p4;
+            osoby[4] = kierownik;
 
 
             for (Osoba osoba : osoby) {
@@ -27,7 +27,7 @@ public class Main {
             }
 
         }
-        catch (PracownikException e) {
+        catch (Pracownik.PracownikException e) {
             System.out.println(e.getMessage());
         }
     }
