@@ -48,7 +48,7 @@ public class Samochod implements Jezdzacy{
 
     @Override
     public boolean zmniejszPredkosc(int ile) {
-        if (predkosc - ile > 0){
+        if (predkosc - ile >= 0){
             predkosc -= ile;
             return true;
         }

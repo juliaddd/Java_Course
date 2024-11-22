@@ -8,9 +8,4 @@ public abstract class Zwierze {
     }
 
     public abstract void dajGlos();
-
-    public Zwierze(int wiek, String gatunek) {
-        this.wiek = wiek;
-        this.gatunek = gatunek;
-    }
 }
