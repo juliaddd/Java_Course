@@ -16,7 +16,8 @@ public class Car implements Cloneable {
     }
 
     @Override
-    protected Object clone(){
-        return new Car(this.speed, this.engine);
+    protected Car clone(){
+        Engine newEngine = this.engine.clone();
+        return new Car(this.speed, newEngine);
     }
 }

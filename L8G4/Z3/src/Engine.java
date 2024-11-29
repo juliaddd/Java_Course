@@ -1,4 +1,4 @@
-public class Engine {
+public class Engine implements Cloneable{
     public int horsePower;
 
     public Engine(int horsePower) {
@@ -10,5 +10,10 @@ public class Engine {
         return "Engine{" +
                 "horsePower=" + horsePower +
                 '}';
+    }
+
+    @Override
+    protected Engine clone(){
+        return new Engine(this.horsePower);
     }
 }
