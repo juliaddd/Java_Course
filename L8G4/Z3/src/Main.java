@@ -1,0 +1,22 @@
+public class Main {
+    public static void main(String[] args) {
+        Engine e1 = new Engine(150);
+        Car c1 = new Car(230, e1);
+
+        Car c2 = (Car)c1.clone();
+
+        System.out.println("Before modification:");
+        System.out.println("c1: " + c1);
+        System.out.println("c2: " + c2);
+
+        c1.speed = 200;
+        System.out.println("\nAfter modifying speed in c1:");
+        System.out.println("c1: " + c1);
+        System.out.println("c2: " + c2);
+
+        c1.engine.horsePower = 300;
+        System.out.println("\nAfter modifying horsepower in Engine of c1:");
+        System.out.println("c1: " + c1);
+        System.out.println("c2: " + c2);
+    }
+}
