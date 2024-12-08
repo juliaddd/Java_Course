@@ -1,16 +1,16 @@
 import java.util.Objects;
 
 public class Person {
-    private String imie;
+    private String name;
     private int rokUrodzenia;
 
     public Person(String name, int rokUrodzenia) {
-        this.imie = name;
+        this.name = name;
         this.rokUrodzenia = rokUrodzenia;
     }
 
-    public String getImie() {
-        return imie;
+    public String getName() {
+        return name;
     }
 
     public int getRokUrodzenia() {
@@ -22,16 +22,16 @@ public class Person {
         if (this == o) return true;
         if (o == null  || o.getClass() != getClass()) return false;
         Person person = (Person) o;
-        return rokUrodzenia == person.rokUrodzenia && Objects.equals(imie, person.imie);
+        return rokUrodzenia == person.rokUrodzenia && Objects.equals(name, person.name);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(imie, rokUrodzenia);
+        return Objects.hash(name, rokUrodzenia);
     }
 
     @Override
     public String toString() {
-        return "Person{imie='" + imie + "', rokUrodzenia=" + rokUrodzenia + "}";
+        return "Person{name='" + name + "', rokUrodzenia=" + rokUrodzenia + "}";
     }
 }
